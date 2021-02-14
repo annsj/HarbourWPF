@@ -1,0 +1,17 @@
+﻿<Window x:Class="HarbourWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HarbourWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="950" Width="1200">
+    <Grid>
+        <Button x:Name="nextDayButton" Content="Nästa dag" HorizontalAlignment="Left" Margin="621,601,0,0" VerticalAlignment="Top" Width="70" Click="NextDayButton_Click" />
+        <ListBox x:Name="boatsInHarbourListBox" HorizontalAlignment="Left" Height="880" Margin="12,24,0,0" VerticalAlignment="Top" Width="488" FontSize="11"/>
+        <ListBox x:Name="summaryListBox" HorizontalAlignment="Left" Height="486" Margin="523,24,0,0" VerticalAlignment="Top" Width="266"/>
+        <Canvas x:Name="dock1Canvas" HorizontalAlignment="Left" Height="880" Margin="843,24,0,0" VerticalAlignment="Top" Width="125"/>
+        <Canvas x:Name="dock2Canvas" HorizontalAlignment="Left" Height="880" Margin="1004,24,0,0" VerticalAlignment="Top" Width="125"/>
+
+    </Grid>
+</Window>
