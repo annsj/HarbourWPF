@@ -22,18 +22,6 @@ namespace HarbourWPF
             MaximumPassengers = Utils.random.Next(1, 6 + 1);
         }
 
-        //public static void AddRowingBoat(List<Boat> boats)
-        //{
-        //    string id = "R-" + GenerateID();
-        //    int weight = Utils.random.Next(100, 300 + 1);
-        //    int maxSpeed = Utils.random.Next(1, 3 + 1);
-        //    int daysStaying = 1;
-        //    int daysSinceArrival = 0;
-        //    int maxPassengers = Utils.random.Next(1, 6 + 1);
-
-        //    boats.Add(new RowingBoat(id, weight, maxSpeed, daysStaying, daysSinceArrival, maxPassengers));
-        //}
-
         public override string ToString()
         {
             return base.ToString() + $"\tKapacitet:\t{MaximumPassengers} personer";

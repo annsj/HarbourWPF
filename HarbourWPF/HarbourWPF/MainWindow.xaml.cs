@@ -144,7 +144,7 @@ namespace HarbourWPF
             int rejectedCargoShips = 0;
 
             List<Boat> arrivingBoats = new List<Boat>();
-            int NumberOfArrivingBoats = 10;             // Det blir nästan aldrig fullt i hamnen om det kommer 5 båtar, ändrade till 10 för att vis att tabellen för avvisade båtar funkar
+            int NumberOfArrivingBoats = 10;
             AddNewBoats(arrivingBoats, NumberOfArrivingBoats);
 
             arrivingBoats.Add(new RowingBoat());
@@ -389,23 +389,18 @@ namespace HarbourWPF
                 {
                     case 0:
                         boats.Add(new RowingBoat());
-                        //RowingBoat.AddRowingBoat(boats);
                         break;
                     case 1:
                         boats.Add(new MotorBoat());
-                        //MotorBoat.AddMotorBoat(boats);
                         break;
                     case 2:
                         boats.Add(new SailingBoat());
-                        //SailingBoat.AddSailingBoat(boats);
                         break;
                     case 3:
                         boats.Add(new Catamaran());
-                        //Catamaran.AddCatamaran(boats);
                         break;
                     case 4:
                         boats.Add(new CargoShip());
-                        //CargoShip.AddCargoShip(boats);
                         break;
                 }
             }
@@ -490,7 +485,6 @@ namespace HarbourWPF
         private static double GenerateAverageSpeed(IEnumerable<Boat> boatsInHarbour)
         {
             var q = boatsInHarbour
-                //.Select()
                 .Average(b => b.MaximumSpeed);
 
             return q;

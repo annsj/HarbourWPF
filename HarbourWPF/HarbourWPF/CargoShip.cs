@@ -22,18 +22,6 @@ namespace HarbourWPF
             Containers = Utils.random.Next(500 + 1);
         }
 
-        //public static void AddCargoShip(List<Boat> boats)
-        //{
-        //    string id = "L-" + GenerateID();
-        //    int weight = Utils.random.Next(3000, 20000 + 1);
-        //    int maxSpeed = Utils.random.Next(1, 20 + 1);
-        //    int daysStaying = 6;
-        //    int daysSinceArrival = 0;
-        //    int containers = Utils.random.Next(500 + 1);
-
-        //    boats.Add(new CargoShip(id, weight, maxSpeed, daysStaying, daysSinceArrival, containers));
-        //}
-
         public override string ToString()
         {
             return base.ToString() + $"\tContainers:\t{Containers} stycken";

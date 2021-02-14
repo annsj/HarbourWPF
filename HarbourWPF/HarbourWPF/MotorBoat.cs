@@ -20,18 +20,6 @@
             Power = Utils.random.Next(10, 1000 + 1);
         }
 
-        //public static void AddMotorBoat(List<Boat> boats)
-        //{
-        //    string id = "M-" + GenerateID();
-        //    int weight = Utils.random.Next(200, 3000 + 1);
-        //    int maxSpeed = Utils.random.Next(1, 60 + 1);
-        //    int daysStaying = 3;
-        //    int daysSinceArrival = 0;
-        //    int power = Utils.random.Next(10, 1000 + 1);
-
-        //    boats.Add(new MotorBoat(id, weight, maxSpeed, daysStaying, daysSinceArrival, power));
-        //}
-
         public override string ToString()
         {
             return base.ToString() + $"\tMotoreffekt:\t{Power} hästkrafter";

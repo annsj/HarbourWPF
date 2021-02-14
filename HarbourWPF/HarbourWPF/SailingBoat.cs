@@ -23,18 +23,6 @@ namespace HarbourWPF
             Length = Utils.random.Next(10, 60 + 1);
         }
 
-        //public static void AddSailingBoat(List<Boat> boats)
-        //{
-        //    string id = "S-" + GenerateID();
-        //    int weight = Utils.random.Next(800, 6000 + 1);
-        //    int maxSpeed = Utils.random.Next(1, 12 + 1);
-        //    int daysStaying = 4;
-        //    int daysSinceArrival = 0;
-        //    int length = Utils.random.Next(10, 60 + 1);
-
-        //    boats.Add(new SailingBoat(id, weight, maxSpeed, daysStaying, daysSinceArrival, length));
-        //}
-
         public override string ToString()
         {
             return base.ToString() + $"\tLängd:\t\t{Math.Round(Utils.ConvertFeetToMeter(Length), 1)} meter";

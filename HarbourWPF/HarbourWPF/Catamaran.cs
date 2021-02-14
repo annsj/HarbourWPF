@@ -31,18 +31,6 @@ namespace HarbourWPF
             return base.TextToFile(index) + $"{Beds}";
         }
 
-        //public static void AddCatamaran(List<Boat> boats)
-        //{
-        //    string id = "K-" + GenerateID();
-        //    int weight = Utils.random.Next(1200, 8000 + 1);
-        //    int maxSpeed = Utils.random.Next(1, 12 + 1);
-        //    int daysStaying = 3;
-        //    int daysSinceArrival = 0;
-        //    int beds = Utils.random.Next(1, 4 + 1);
-
-        //    boats.Add(new Catamaran(id, weight, maxSpeed, daysStaying, daysSinceArrival, beds));
-        //}
-
         internal static bool ParkCatamaranInHarbour(Boat boat, DockSpace[] dock1, DockSpace[] dock2)
         {
             bool boatParked;
